@@ -1,8 +1,11 @@
 # Maine Community Services Accessibility Mapper
 
-An ArcGIS Online web map visualizing public library accessibility across Maine, built as a portfolio project while preparing for a Junior GIS Engineer role.
+An ArcGIS Online web map and ArcGIS Experience Builder application visualizing public library accessibility across Maine, built as a portfolio project.
 
-**Live Map:** [View on ArcGIS Online](https://nu.maps.arcgis.com/apps/mapviewer/index.html?webmap=c2ccb429860243fabe2559b95076dec2)
+This project demonstrates the complete GIS workflow, from data acquisition and cleaning to hosted feature layers, web mapping, and an interactive ArcGIS Experience Builder application.
+
+**Live Application (Phase 2):** [View Experience Builder App](https://experience.arcgis.com/experience/0fe080c014fd44dd80ca0bd9f9a4d706)
+**Web Map (Phase 1):** [View on ArcGIS Online](https://nu.maps.arcgis.com/apps/mapviewer/index.html?webmap=c2ccb429860243fabe2559b95076dec2)
 
 ---
 
@@ -19,6 +22,7 @@ The darker the point, the more hours that library is open per year. The lightest
 - Practice the full GIS data workflow: acquire → clean → publish → visualize
 - Publish a properly structured Hosted Feature Layer in ArcGIS Online
 - Build a professional web map with meaningful symbology and popups
+- Build an interactive Experience Builder application with search and filters
 - Document every design decision so I can explain it in an interview
 
 ---
@@ -38,6 +42,7 @@ After filtering to Maine only, the dataset contained 264 library outlet location
 ## Tools Used
 
 - ArcGIS Online — hosted feature layer, web map, symbology, popups
+- ArcGIS Experience Builder — interactive application with search and filters
 - Google Sheets — data filtering and cleaning
 - IMLS Public Libraries Survey — data source
 
@@ -52,6 +57,7 @@ After filtering to Maine only, the dataset contained 264 library outlet location
 5. Created a web map with graduated color symbology based on `HOURS` field
 6. Configured popups to display library name, address, city, county, outlet type, and annual hours
 7. Set basemap to Light Gray Canvas for visual clarity
+8. Built an Experience Builder application with search, legend, and interactive filters
 
 ---
 
@@ -78,6 +84,19 @@ I removed latitude, longitude, and state abbreviation from the popup because the
 
 ---
 
+## Experience Builder Application (Phase 2)
+
+The Experience Builder app adds interactivity on top of the web map:
+
+- **Search** — find addresses or places on the map
+- **Filter by County** — filter libraries by Maine county
+- **Filter by Outlet Type** — filter by outlet type (CE = Central, BR = Branch, BS = Bookmobile)
+- **Filter by Annual Hours** — filter to libraries open at least a specified number of hours
+- **Legend** — shows the graduated color scale
+- **Scale bar** — standard cartographic element showing real-world distance
+
+---
+
 ## Known Issues
 
 - ZIP codes are missing their leading zero (e.g., `4101` instead of `04101`). This is a data formatting issue from the CSV export and does not affect map functionality.
@@ -89,36 +108,28 @@ I removed latitude, longitude, and state abbreviation from the popup because the
 
 **Full Maine View**
 
-![Full Maine extent](screenshots/main-map.png)
+![Full Maine View](screenshots/main-map.png)
 
-**Popup Example — Portland Public Library**
+**Popup Example — South Portland Public Library**
 
-![Portland Public Library popup](screenshots/popup-example.png)
+![Popup Example](screenshots/popup-example.png)
 
 **Southern Maine Density**
 
-![Southern Maine density view](screenshots/portland-area-density.png)
-
----
-
-## Future Improvements (Phase 2)
-
-- Build an ArcGIS Experience Builder application
-- Add search functionality
-- Add filters by county and annual operating hours
-- Add additional community service datasets
-- Improve the user interface
+![Southern Maine Density](screenshots/portland-area-density.png)
 
 ---
 
 ## Skills Demonstrated
 
 - ArcGIS Online
+- ArcGIS Experience Builder
 - Hosted Feature Layers
 - Data Cleaning
 - Spatial Data Visualization
 - Graduated Symbology
 - Pop-up Configuration
+- Interactive Filters (SQL Expressions)
 - Cartographic Design
 - GitHub Documentation
 
@@ -127,4 +138,7 @@ I removed latitude, longitude, and state abbreviation from the popup because the
 ## Current Status
 
 Phase 1 (Web Map MVP) — **Complete**
-Phase 2 (ArcGIS Experience Builder Application) — **In Progress**
+Phase 2 (ArcGIS Experience Builder Application) — **Complete**
+
+
+
