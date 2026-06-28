@@ -89,11 +89,11 @@ I removed latitude, longitude, and state abbreviation from the popup because the
 
 **Full Maine View**
 
-![Full Maine extent](screenshots/full_maine_extent.png)
+![Full Maine extent](screenshots/main-map.png)
 
 **Popup Example — Portland Public Library**
 
-![Portland Public Library popup](screenshots/portland_popup.png)
+![Portland Public Library popup](screenshots/popup-example.png)
 
 **Southern Maine Density**
 
