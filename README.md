@@ -97,7 +97,7 @@ I removed latitude, longitude, and state abbreviation from the popup because the
 
 **Southern Maine Density**
 
-![Southern Maine density view](screenshots/portland_area_density.png)
+![Southern Maine density view](screenshots/portland-area-density.png)
 
 ---
 
