@@ -11,7 +11,7 @@ This project demonstrates the complete GIS workflow, from data acquisition and c
 
 ## Project Overview
 
-Maine is the most rural state in the contiguous US, and access to public services varies significantly across the state. This project maps all 264 public library outlet locations in Maine, symbolized by annual hours of operation — a proxy for how accessible each library is to its community.
+Maine is the most rural state in the contiguous US, and access to public services varies significantly across the state. This project maps all 264 public library outlet locations in Maine, symbolized by annual hours of operation  a proxy for how accessible each library is to its community.
 
 The darker the point, the more hours that library is open per year. The lightest points represent libraries open fewer than 633 hours annually.
 
@@ -23,7 +23,7 @@ The darker the point, the more hours that library is open per year. The lightest
 - Publish a properly structured Hosted Feature Layer in ArcGIS Online
 - Build a professional web map with meaningful symbology and popups
 - Build an interactive Experience Builder application with search and filters
-- Document every design decision so I can explain it in an interview
+- Document every design decision
 
 ---
 
